@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Planejare</title>
+    <!-- Linkar o HTMl com o CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><button onclick="navigateTo('home')" class="active">Home</button></li>
+            <li><button onclick="navigateTo('receita')">Adicionar Receita</button></li>
+            <li><button onclick="navigateTo('investimento')">Adicionar Investimento</button></li>
+            <li><button onclick="navigateTo('despesa')">Adicionar Despesa</button></li>
+            <li><button onclick="navigateTo('visao-geral')">Visão Geral</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="titulo-planejare">Planejare</h1>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-input" placeholder="Seu e-mail">
+        <label for="password">Senha</label>
+        <input type="password" id="password" class="form-input" placeholder="Sua senha">
+
+        <div class="footer-links">
+            <a href="#" class="footer-link" onclick="forgotPassword()">Esqueci minha senha</a>
+            <a href="#" class="footer-link" onclick="createAccount()">Criar Conta</a>
+        </div>
+
+        <button type="submit" class="login-btn" id="loginBtn">
+            <span id="btnText">Entrar</span>
+            <div class="loading" id="loading"></div>
+        </button>
+    </div>
+
+    <script>
+        function forgotPassword() {
+            alert('Funcionalidade de recuperação de senha em desenvolvimento');
+        }
+
+        function createAccount() {
+            alert('Funcionalidade de criação de conta em desenvolvimento');
+        }
+    </script>
+
+</body>
+
+</html>
